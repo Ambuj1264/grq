@@ -7,7 +7,8 @@ import { Field, InputType } from '@nestjs/graphql';
 @InputType()
 export class BadExampleDto {
   @Field({ nullable: true })
-  name?: string; // Inline comment that violates our rules
+  // Inline comment that violates our rules
+  name?: string;
 
   @Field({ nullable: true })
   email?: string;
