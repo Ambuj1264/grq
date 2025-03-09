@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run lint-staged to check code with ESLint before commit
+# This ensures all staged files are linted and fixed automatically
+npx lint-staged
